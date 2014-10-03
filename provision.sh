@@ -12,6 +12,10 @@ sudo aptitude -y install mysql-client;
 
 sudo mysql -pqwe123 < /vagrant/create-database.sql;
 
+sudo cp /vagrant/easyrec.cnf /etc/mysql/conf.d/;
+
+sudo service mysql restart;
+
 # Java
 
 sudo aptitude -y install python-software-properties;
